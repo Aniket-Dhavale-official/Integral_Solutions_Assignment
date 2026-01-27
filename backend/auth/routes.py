@@ -28,6 +28,32 @@ def is_strong_password(value: str) -> bool:
     return has_lower and has_upper and has_digit and has_special
 
 
+def get_user_id_from_token():
+    auth_header = request.headers.get("Authorization", "")
+    if not auth_header.startswith("Bearer "):
+        return None, jsonify({"success": False, "error": "invalid token"}), 401
+
+    token = auth_header[7:].strip()
+    if not token:
+        return None, jsonify({"success": False, "error": "invalid token"}), 401
+
+    jwt_secret = current_app.config.get("JWT_SECRET_KEY")
+    jwt_algorithm = current_app.config.get("JWT_ALGORITHM", "HS256")
+
+    try:
+        payload = jwt.decode(token, jwt_secret, algorithms=[jwt_algorithm])
+        user_id = payload.get("user_id")
+        if not user_id:
+            return None, jsonify({"success": False, "error": "invalid token"}), 401
+        return user_id, None, None
+    except jwt.ExpiredSignatureError:
+        return None, jsonify({"success": False, "error": "token expired"}), 401
+    except jwt.InvalidTokenError:
+        return None, jsonify({"success": False, "error": "invalid token"}), 401
+    except Exception:
+        return None, jsonify({"success": False, "error": "invalid token"}), 401
+
+
 @auth_bp.post("/signup")
 def signup():
     payload = request.get_json(silent=True) or {}
@@ -146,4 +172,24 @@ def login():
 
     logger.info(f"Login succeeded at {attempt_time} for user {user_id}")
     return jsonify({"success": True, "token": token}), 200
+
+
+@auth_bp.get("/me")
+def get_profile():
+    user_id, error_response, status_code = get_user_id_from_token()
+    if error_response:
+        return error_response, status_code
+
+    client = get_db_client()
+    db = client.get_default_database()
+    users = db["users"]
+
+    user = users.find_one({"user_id": user_id})
+    if not user:
+        return jsonify({"success": False, "error": "user not found"}), 404
+
+    full_name = user.get("full_name", "")
+    email = user.get("email", "")
+
+    return jsonify({"success": True, "full_name": full_name, "email": email}), 200
 
