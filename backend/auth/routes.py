@@ -37,6 +37,13 @@ def get_user_id_from_token():
     if not token:
         return None, jsonify({"success": False, "error": "invalid token"}), 401
 
+    client = get_db_client()
+    db = client.get_default_database()
+    blacklist = db["token_blacklist"]
+
+    if blacklist.find_one({"token": token}):
+        return None, jsonify({"success": False, "error": "token invalidated"}), 401
+
     jwt_secret = current_app.config.get("JWT_SECRET_KEY")
     jwt_algorithm = current_app.config.get("JWT_ALGORITHM", "HS256")
 
@@ -192,4 +199,61 @@ def get_profile():
     email = user.get("email", "")
 
     return jsonify({"success": True, "full_name": full_name, "email": email}), 200
+
+
+@auth_bp.post("/logout")
+def logout():
+    auth_header = request.headers.get("Authorization", "")
+    if not auth_header.startswith("Bearer "):
+        return jsonify({"success": False, "error": "invalid token"}), 401
+
+    token = auth_header[7:].strip()
+    if not token:
+        return jsonify({"success": False, "error": "invalid token"}), 401
+
+    jwt_secret = current_app.config.get("JWT_SECRET_KEY")
+    jwt_algorithm = current_app.config.get("JWT_ALGORITHM", "HS256")
+
+    try:
+        payload = jwt.decode(token, jwt_secret, algorithms=[jwt_algorithm])
+    except jwt.ExpiredSignatureError:
+        return jsonify({"success": False, "error": "token expired"}), 401
+    except jwt.InvalidTokenError:
+        return jsonify({"success": False, "error": "invalid token"}), 401
+    except Exception:
+        return jsonify({"success": False, "error": "invalid token"}), 401
+
+    client = get_db_client()
+    db = client.get_default_database()
+    blacklist = db["token_blacklist"]
+
+    existing = blacklist.find_one({"token": token})
+    if existing:
+        return jsonify({"success": True, "message": "logout successful"}), 200
+
+    exp_time = payload.get("exp")
+    if exp_time:
+        if isinstance(exp_time, (int, float)):
+            expires_at = datetime.utcfromtimestamp(exp_time)
+        elif isinstance(exp_time, datetime):
+            expires_at = exp_time
+        else:
+            expires_at = datetime.utcnow() + timedelta(hours=24)
+    else:
+        expires_at = datetime.utcnow() + timedelta(hours=24)
+
+    blacklist_doc = {
+        "token": token,
+        "invalidated_at": datetime.utcnow(),
+        "expires_at": expires_at,
+    }
+
+    try:
+        blacklist.insert_one(blacklist_doc)
+    except Exception:
+        logger.exception("Logout failed during blacklist persistence")
+        return jsonify({"success": False, "error": "logout failed"}), 500
+
+    logger.info("Logout succeeded")
+    return jsonify({"success": True, "message": "logout successful"}), 200
 
