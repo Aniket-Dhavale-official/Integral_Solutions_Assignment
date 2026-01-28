@@ -257,3 +257,47 @@ def logout():
     logger.info("Logout succeeded")
     return jsonify({"success": True, "message": "logout successful"}), 200
 
+
+@auth_bp.post("/refresh")
+def refresh():
+    payload = request.get_json(silent=True) or {}
+    refresh_token = payload.get("refresh_token") or ""
+    if not refresh_token:
+        return jsonify({"success": False, "error": "refresh_token is required"}), 400
+    client = get_db_client()
+    db = client.get_default_database()
+    tokens = db["refresh_tokens"]
+    record = tokens.find_one({"token": refresh_token})
+    if not record:
+        return jsonify({"success": False, "error": "invalid refresh token"}), 401
+    now = datetime.utcnow()
+    expires_at = record.get("expires_at")
+    if expires_at and expires_at < now:
+        tokens.delete_one({"_id": record["_id"]})
+        return jsonify({"success": False, "error": "refresh token expired"}), 401
+    jwt_secret = current_app.config.get("JWT_SECRET_KEY")
+    jwt_algorithm = current_app.config.get("JWT_ALGORITHM", "HS256")
+    try:
+        decoded = jwt.decode(refresh_token, jwt_secret, algorithms=[jwt_algorithm])
+    except jwt.ExpiredSignatureError:
+        tokens.delete_one({"_id": record["_id"]})
+        return jsonify({"success": False, "error": "refresh token expired"}), 401
+    except jwt.InvalidTokenError:
+        return jsonify({"success": False, "error": "invalid refresh token"}), 401
+    except Exception:
+        return jsonify({"success": False, "error": "invalid refresh token"}), 401
+    user_id = decoded.get("user_id")
+    if not user_id:
+        return jsonify({"success": False, "error": "invalid refresh token"}), 401
+    access_expiry = datetime.utcnow() + timedelta(hours=24)
+    access_payload = {
+        "user_id": user_id,
+        "exp": access_expiry,
+    }
+    try:
+        access_token = jwt.encode(access_payload, jwt_secret, algorithm=jwt_algorithm)
+    except Exception:
+        logger.exception("Access token generation failed during refresh")
+        return jsonify({"success": False, "error": "refresh failed"}), 500
+    return jsonify({"success": True, "token": access_token}), 200
+
