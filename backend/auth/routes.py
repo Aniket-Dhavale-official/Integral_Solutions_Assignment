@@ -28,13 +28,33 @@ def is_strong_password(value: str) -> bool:
     return has_lower and has_upper and has_digit and has_special
 
 
+def log_login_event(ip: str, email: str | None, status: str, reason: str | None = None) -> None:
+    logger.info(
+        "login_event",
+        extra={
+            "ip": ip,
+            "email": email,
+            "status": status,
+            "reason": reason,
+        },
+    )
+
+
 def get_user_id_from_token():
     auth_header = request.headers.get("Authorization", "")
     if not auth_header.startswith("Bearer "):
+        logger.warning(
+            "token_error",
+            extra={"error": "missing_bearer_prefix", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "invalid token"}), 401
 
     token = auth_header[7:].strip()
     if not token:
+        logger.warning(
+            "token_error",
+            extra={"error": "empty_token", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "invalid token"}), 401
 
     client = get_db_client()
@@ -42,6 +62,10 @@ def get_user_id_from_token():
     blacklist = db["token_blacklist"]
 
     if blacklist.find_one({"token": token}):
+        logger.warning(
+            "token_error",
+            extra={"error": "blacklisted_token", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "token invalidated"}), 401
 
     jwt_secret = current_app.config.get("JWT_SECRET_KEY")
@@ -51,13 +75,29 @@ def get_user_id_from_token():
         payload = jwt.decode(token, jwt_secret, algorithms=[jwt_algorithm])
         user_id = payload.get("user_id")
         if not user_id:
+            logger.warning(
+                "token_error",
+                extra={"error": "missing_user_id_claim", "ip": request.remote_addr or "unknown"},
+            )
             return None, jsonify({"success": False, "error": "invalid token"}), 401
         return user_id, None, None
     except jwt.ExpiredSignatureError:
+        logger.warning(
+            "token_error",
+            extra={"error": "expired_access_token", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "token expired"}), 401
     except jwt.InvalidTokenError:
+        logger.warning(
+            "token_error",
+            extra={"error": "invalid_access_token", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "invalid token"}), 401
     except Exception:
+        logger.exception(
+            "token_error",
+            extra={"error": "unexpected_token_error", "ip": request.remote_addr or "unknown"},
+        )
         return None, jsonify({"success": False, "error": "invalid token"}), 401
 
 
@@ -146,11 +186,11 @@ def login():
         }
     )
     if attempts_count >= 5:
-        logger.info(f"Login rate limit exceeded for ip={ip_address} email={email}")
+        log_login_event(ip_address, email, "blocked", "rate_limit_exceeded")
         return jsonify({"success": False, "error": "too many login attempts"}), 429
 
     if not email:
-        logger.info(f"Login failed at {attempt_time}: email missing")
+        log_login_event(ip_address, None, "failed", "email_missing")
         attempts_collection.insert_one(
             {
                 "email": None,
@@ -162,7 +202,7 @@ def login():
         return jsonify({"success": False, "error": "email is required"}), 400
 
     if not is_valid_email(email):
-        logger.info(f"Login failed at {attempt_time}: invalid email format")
+        log_login_event(ip_address, email, "failed", "invalid_email_format")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -174,7 +214,7 @@ def login():
         return jsonify({"success": False, "error": "email is invalid"}), 400
 
     if not password:
-        logger.info(f"Login failed at {attempt_time}: password missing")
+        log_login_event(ip_address, email, "failed", "password_missing")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -189,7 +229,7 @@ def login():
 
     user = users.find_one({"email": email})
     if not user:
-        logger.info(f"Login failed at {attempt_time}: email not found")
+        log_login_event(ip_address, email, "failed", "email_not_found")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -202,7 +242,7 @@ def login():
 
     stored_hash = user.get("password_hash", "")
     if not check_password_hash(stored_hash, password):
-        logger.info(f"Login failed at {attempt_time}: password mismatch")
+        log_login_event(ip_address, email, "failed", "password_mismatch")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -215,7 +255,7 @@ def login():
 
     user_id = user.get("user_id")
     if not user_id:
-        logger.info(f"Login failed at {attempt_time}: user_id missing")
+        log_login_event(ip_address, email, "failed", "user_id_missing")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -238,7 +278,8 @@ def login():
     try:
         token = jwt.encode(token_payload, jwt_secret, algorithm=jwt_algorithm)
     except Exception:
-        logger.exception(f"Login failed at {attempt_time}: JWT generation error")
+        log_login_event(ip_address, email, "failed", "jwt_generation_error")
+        logger.exception("login_jwt_generation_error")
         attempts_collection.insert_one(
             {
                 "email": email,
@@ -258,7 +299,7 @@ def login():
         }
     )
 
-    logger.info(f"Login succeeded at {attempt_time} for user {user_id}")
+    log_login_event(ip_address, email, "success", None)
     return jsonify({"success": True, "token": token}), 200
 
 
