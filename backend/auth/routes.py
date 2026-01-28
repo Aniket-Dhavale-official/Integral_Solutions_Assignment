@@ -130,36 +130,100 @@ def login():
     payload = request.get_json(silent=True) or {}
     email = (payload.get("email") or "").strip().lower()
     password = payload.get("password") or ""
+    ip_address = request.remote_addr or "unknown"
+
+    client = get_db_client()
+    db = client.get_default_database()
+    attempts_collection = db["login_attempts"]
+    window_start = attempt_time - timedelta(minutes=5)
+    filters = [{"ip": ip_address}]
+    if email:
+        filters.append({"email": email})
+    attempts_count = attempts_collection.count_documents(
+        {
+            "timestamp": {"$gte": window_start},
+            "$or": filters,
+        }
+    )
+    if attempts_count >= 5:
+        logger.info(f"Login rate limit exceeded for ip={ip_address} email={email}")
+        return jsonify({"success": False, "error": "too many login attempts"}), 429
 
     if not email:
         logger.info(f"Login failed at {attempt_time}: email missing")
+        attempts_collection.insert_one(
+            {
+                "email": None,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "email is required"}), 400
 
     if not is_valid_email(email):
         logger.info(f"Login failed at {attempt_time}: invalid email format")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "email is invalid"}), 400
 
     if not password:
         logger.info(f"Login failed at {attempt_time}: password missing")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "password is required"}), 400
 
-    client = get_db_client()
-    db = client.get_default_database()
     users = db["users"]
 
     user = users.find_one({"email": email})
     if not user:
         logger.info(f"Login failed at {attempt_time}: email not found")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "invalid credentials"}), 401
 
     stored_hash = user.get("password_hash", "")
     if not check_password_hash(stored_hash, password):
         logger.info(f"Login failed at {attempt_time}: password mismatch")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "invalid credentials"}), 401
 
     user_id = user.get("user_id")
     if not user_id:
         logger.info(f"Login failed at {attempt_time}: user_id missing")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "login failed"}), 500
 
     jwt_secret = current_app.config.get("JWT_SECRET_KEY")
@@ -175,7 +239,24 @@ def login():
         token = jwt.encode(token_payload, jwt_secret, algorithm=jwt_algorithm)
     except Exception:
         logger.exception(f"Login failed at {attempt_time}: JWT generation error")
+        attempts_collection.insert_one(
+            {
+                "email": email,
+                "ip": ip_address,
+                "timestamp": attempt_time,
+                "success": False,
+            }
+        )
         return jsonify({"success": False, "error": "login failed"}), 500
+
+    attempts_collection.insert_one(
+        {
+            "email": email,
+            "ip": ip_address,
+            "timestamp": attempt_time,
+            "success": True,
+        }
+    )
 
     logger.info(f"Login succeeded at {attempt_time} for user {user_id}")
     return jsonify({"success": True, "token": token}), 200
