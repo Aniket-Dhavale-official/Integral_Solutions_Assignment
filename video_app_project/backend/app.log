@@ -6,3 +6,316 @@
 2026-01-28 18:39:15,862 INFO werkzeug  * Detected change in 'D:\\Assignment\\backend\\video\\routes.py', reloading
 2026-01-28 18:39:18,539 WARNING werkzeug  * Debugger is active!
 2026-01-28 18:39:18,545 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 19:15:01,552 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-28 19:15:01,553 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-28 19:15:01,557 INFO werkzeug  * Restarting with stat
+2026-01-28 19:15:02,448 WARNING werkzeug  * Debugger is active!
+2026-01-28 19:15:02,479 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 20:56:48,753 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-28 20:56:48,754 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-28 20:56:48,757 INFO werkzeug  * Restarting with stat
+2026-01-28 20:56:50,239 WARNING werkzeug  * Debugger is active!
+2026-01-28 20:56:50,247 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 21:58:03,876 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\auth\\routes.py', reloading
+2026-01-28 21:58:04,933 INFO werkzeug  * Restarting with stat
+2026-01-28 21:58:08,658 WARNING werkzeug  * Debugger is active!
+2026-01-28 21:58:08,674 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 22:05:53,581 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\seed_data.py', reloading
+2026-01-28 22:05:54,238 INFO werkzeug  * Restarting with stat
+2026-01-28 22:05:55,747 WARNING werkzeug  * Debugger is active!
+2026-01-28 22:05:55,751 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 22:06:21,830 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\seed_data.py', reloading
+2026-01-28 22:06:22,905 INFO werkzeug  * Restarting with stat
+2026-01-28 22:06:26,243 WARNING werkzeug  * Debugger is active!
+2026-01-28 22:06:26,254 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-28 22:16:16,848 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-28 22:16:16,849 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-28 22:16:16,854 INFO werkzeug  * Restarting with stat
+2026-01-28 22:16:18,439 WARNING werkzeug  * Debugger is active!
+2026-01-28 22:16:18,470 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 13:50:05,080 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-29 13:50:05,082 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-29 13:50:05,083 INFO werkzeug  * Restarting with stat
+2026-01-29 13:50:06,052 WARNING werkzeug  * Debugger is active!
+2026-01-29 13:50:06,059 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 13:56:15,703 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 13:56:15] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 13:59:55,255 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\auth\\routes.py', reloading
+2026-01-29 13:59:55,945 INFO werkzeug  * Restarting with stat
+2026-01-29 13:59:57,565 WARNING werkzeug  * Debugger is active!
+2026-01-29 13:59:57,573 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:00:36,520 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:00:36] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:02:14,557 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-29 14:02:14,557 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-29 14:02:14,559 INFO werkzeug  * Restarting with stat
+2026-01-29 14:02:15,573 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:02:15,579 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:20:52,926 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:20:52] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:31:30,428 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:31:30] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:31:33,733 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:31:33] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:31:57,162 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\auth\\routes.py', reloading
+2026-01-29 14:31:57,852 INFO werkzeug  * Restarting with stat
+2026-01-29 14:32:00,622 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:32:00,645 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:33:12,077 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:33:12] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:33:28,305 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:33:28] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:33:44,660 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:33:44] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:35:58,960 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 14:35:59,596 INFO werkzeug  * Restarting with stat
+2026-01-29 14:36:01,298 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:36:01,301 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:36:02,311 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 14:36:02,839 INFO werkzeug  * Restarting with stat
+2026-01-29 14:36:04,086 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:36:04,092 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:36:43,345 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 14:36:43,988 INFO werkzeug  * Restarting with stat
+2026-01-29 14:36:46,214 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:36:46,225 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:37:11,771 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-29 14:37:11,771 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-29 14:37:11,774 INFO werkzeug  * Restarting with stat
+2026-01-29 14:37:12,779 WARNING werkzeug  * Debugger is active!
+2026-01-29 14:37:12,784 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 14:37:49,700 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:37:49] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:37:50,273 INFO auth.routes Signup succeeded
+2026-01-29 14:37:50,275 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:37:50] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2026-01-29 14:38:15,739 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:38:15] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2026-01-29 14:38:16,099 INFO auth.routes Signup failed: email already exists
+2026-01-29 14:38:16,100 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:38:16] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+2026-01-29 14:38:46,572 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:38:46] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 14:38:47,284 INFO auth.routes login_event
+2026-01-29 14:38:47,285 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:38:47] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 14:48:50,068 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:48:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 14:48:50,854 INFO auth.routes login_event
+2026-01-29 14:48:50,855 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:48:50] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 14:50:54,203 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:50:54] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 14:50:54,891 INFO auth.routes login_event
+2026-01-29 14:50:54,892 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 14:50:54] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 16:55:05,224 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\video\\routes.py', reloading
+2026-01-29 16:55:06,158 INFO werkzeug  * Restarting with stat
+2026-01-29 16:55:07,698 WARNING werkzeug  * Debugger is active!
+2026-01-29 16:55:07,709 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 16:57:54,689 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 16:57:55,444 INFO werkzeug  * Restarting with stat
+2026-01-29 16:57:57,105 WARNING werkzeug  * Debugger is active!
+2026-01-29 16:57:57,114 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 16:59:53,798 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 16:59:53] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 16:59:54,212 INFO auth.routes login_event
+2026-01-29 16:59:54,213 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 16:59:54] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:00:09,411 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:00:09] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:00:10,051 INFO auth.routes login_event
+2026-01-29 17:00:10,052 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:00:10] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:00:34,617 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:00:34] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:00:35,197 INFO auth.routes login_event
+2026-01-29 17:00:35,198 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:00:35] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:01:56,078 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:01:56] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:01:56,635 INFO auth.routes login_event
+2026-01-29 17:01:56,635 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:01:56] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:01:56,716 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:01:56] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:01:57,075 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:01:57] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:02:04,152 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:04] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjYxN30.N_ngPVh_as3yCD3_if8RbHS3ui2nYUvpHCcsM3foJug HTTP/1.1" 200 -
+2026-01-29 17:02:04,444 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:04] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjYxN30.N_ngPVh_as3yCD3_if8RbHS3ui2nYUvpHCcsM3foJug HTTP/1.1" 200 -
+2026-01-29 17:02:09,760 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:09] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NjYxN30.ie5dlzvYe_sYjrvyra4mS4XT8Q6NaQeBBWZ1s-TpiBI HTTP/1.1" 200 -
+2026-01-29 17:02:10,059 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:10] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NjYxN30.ie5dlzvYe_sYjrvyra4mS4XT8Q6NaQeBBWZ1s-TpiBI HTTP/1.1" 200 -
+2026-01-29 17:02:23,920 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:23] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:02:24,290 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:02:24] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:04:27,047 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:04:27] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:04:27,343 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:04:27] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:04:58,454 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:04:58] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Njc2N30.t5N4kYPZe5zieCcWCdepRQhEgFlktOCUHz0Ksy-ZuXo HTTP/1.1" 200 -
+2026-01-29 17:04:58,751 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:04:58] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Njc2N30.t5N4kYPZe5zieCcWCdepRQhEgFlktOCUHz0Ksy-ZuXo HTTP/1.1" 200 -
+2026-01-29 17:05:20,633 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:20] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:05:21,183 INFO auth.routes login_event
+2026-01-29 17:05:21,184 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:21] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:05:21,223 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:21] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:05:21,561 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:21] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:05:23,494 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:23] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjgyMX0.1sB5rbqtsHguoPLO9Ar3-CutHX3fXNI_uyKT8aIhjBw HTTP/1.1" 200 -
+2026-01-29 17:05:23,840 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:23] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjgyMX0.1sB5rbqtsHguoPLO9Ar3-CutHX3fXNI_uyKT8aIhjBw HTTP/1.1" 200 -
+2026-01-29 17:05:33,306 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:33] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjgyMX0.1sB5rbqtsHguoPLO9Ar3-CutHX3fXNI_uyKT8aIhjBw HTTP/1.1" 200 -
+2026-01-29 17:05:33,655 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:05:33] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NjgyMX0.1sB5rbqtsHguoPLO9Ar3-CutHX3fXNI_uyKT8aIhjBw HTTP/1.1" 200 -
+2026-01-29 17:06:06,939 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:06] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:06:07,476 INFO auth.routes login_event
+2026-01-29 17:06:07,476 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:07] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:06:07,557 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:07] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:06:07,899 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:07] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:06:13,454 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:13] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:06:13,813 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:06:13] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:08:06,666 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:06] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:08:07,231 INFO auth.routes login_event
+2026-01-29 17:08:07,232 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:07] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:08:07,291 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:07] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:08:07,643 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:07] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:08:09,002 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:09] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Njk4N30.IJSBMbT89XOBy7pU-kwqiFJ9QPnsJkeo4EjnPD0rNiY HTTP/1.1" 200 -
+2026-01-29 17:08:09,340 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:09] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Njk4N30.IJSBMbT89XOBy7pU-kwqiFJ9QPnsJkeo4EjnPD0rNiY HTTP/1.1" 200 -
+2026-01-29 17:08:13,181 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:13] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4Njk4N30.z3wfNai6fPAqgCmpidaWkxSUtyxToXyTeeCC1tUqIS4 HTTP/1.1" 200 -
+2026-01-29 17:08:13,522 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:13] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4Njk4N30.z3wfNai6fPAqgCmpidaWkxSUtyxToXyTeeCC1tUqIS4 HTTP/1.1" 200 -
+2026-01-29 17:08:18,367 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:18] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:08:18,744 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:18] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:08:56,983 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:56] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:08:57,571 INFO auth.routes login_event
+2026-01-29 17:08:57,572 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:57] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:08:57,638 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:57] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:08:57,980 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:08:57] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:09:03,198 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:09:03] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:09:03,560 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:09:03] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:09:07,834 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:09:07] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzAzN30.-nue1XaLUF_OUZ7TNuX_mMCfG7xeShLuDChzLpVB3oM HTTP/1.1" 200 -
+2026-01-29 17:09:08,183 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:09:08] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzAzN30.-nue1XaLUF_OUZ7TNuX_mMCfG7xeShLuDChzLpVB3oM HTTP/1.1" 200 -
+2026-01-29 17:10:30,493 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:10:30] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:10:30,779 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:10:30] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:10:34,030 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:10:34] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzAzN30.-nue1XaLUF_OUZ7TNuX_mMCfG7xeShLuDChzLpVB3oM HTTP/1.1" 200 -
+2026-01-29 17:10:34,379 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:10:34] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzAzN30.-nue1XaLUF_OUZ7TNuX_mMCfG7xeShLuDChzLpVB3oM HTTP/1.1" 200 -
+2026-01-29 17:11:12,386 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:11:12] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:11:12,671 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:11:12] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:11:15,005 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:11:15] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:11:15,319 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:11:15] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:12:01,082 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:12:01,306 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:12:01,400 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:12:01,451 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:12:01,505 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzAzN30.UugfsZk_VOSB9bO3u_lpdj-0mB4a1ncTCWo0FC4GWsc HTTP/1.1" 200 -
+2026-01-29 17:12:01,764 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:01] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:12:03,694 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:03] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:12:04,051 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:04] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:12:18,014 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:18] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:12:18,320 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:18] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:12:25,706 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:25] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzIzOH0.ftPTqCznuOcqgCcPeO3I37zzMa7NMFp7PmfENfww0MY HTTP/1.1" 200 -
+2026-01-29 17:12:26,010 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:26] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzIzOH0.ftPTqCznuOcqgCcPeO3I37zzMa7NMFp7PmfENfww0MY HTTP/1.1" 200 -
+2026-01-29 17:12:28,027 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:28] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:12:28,384 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:28] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:12:32,165 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:32] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzIzOH0.-fG8wbkeFgUCJV1UE56dW2RAz91_dn2jU-32EkDZgok HTTP/1.1" 200 -
+2026-01-29 17:12:32,500 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:32] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzIzOH0.-fG8wbkeFgUCJV1UE56dW2RAz91_dn2jU-32EkDZgok HTTP/1.1" 200 -
+2026-01-29 17:12:34,508 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:34] "OPTIONS /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:12:34,850 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:34] "POST /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:12:52,130 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:52] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:12:52,450 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:52] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:12:58,824 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:58] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:12:59,169 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:12:59] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:14:56,527 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:14:56] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzI3OX0.YgdTuQEvnXCMNorhIL7K61RXW6ql3PFSf1fFIHfQV08 HTTP/1.1" 200 -
+2026-01-29 17:14:56,825 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:14:56] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzI3OX0.YgdTuQEvnXCMNorhIL7K61RXW6ql3PFSf1fFIHfQV08 HTTP/1.1" 200 -
+2026-01-29 17:14:58,843 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:14:58] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:14:59,211 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:14:59] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:17:48,936 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:17:48] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:17:49,486 INFO auth.routes login_event
+2026-01-29 17:17:49,487 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:17:49] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:17:49,569 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:17:49] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:17:49,910 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:17:49] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:19:23,978 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:23] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:19:24,501 INFO auth.routes login_event
+2026-01-29 17:19:24,502 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:24] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:19:24,558 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:24] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:19:24,910 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:24] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:19:26,744 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:26] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:19:27,090 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:27] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:19:28,205 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:28] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:19:28,554 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:19:28] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:20:05,010 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:05] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzY2NH0.UyiAp-YZKWrglJQFdSEaKGtM09yXobytcZBDqj-kYdc HTTP/1.1" 200 -
+2026-01-29 17:20:05,304 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:05] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzY2NH0.UyiAp-YZKWrglJQFdSEaKGtM09yXobytcZBDqj-kYdc HTTP/1.1" 200 -
+2026-01-29 17:20:05,906 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:05] "OPTIONS /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:20:06,261 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:06] "POST /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:20:21,504 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:21] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 17:20:21,895 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:21] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 17:20:35,236 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:35] "OPTIONS /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzY2NH0.UyiAp-YZKWrglJQFdSEaKGtM09yXobytcZBDqj-kYdc HTTP/1.1" 200 -
+2026-01-29 17:20:35,580 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:35] "GET /video/6979fa7d55cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTdkNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY4NzY2NH0.UyiAp-YZKWrglJQFdSEaKGtM09yXobytcZBDqj-kYdc HTTP/1.1" 200 -
+2026-01-29 17:20:36,160 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:36] "OPTIONS /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:20:36,505 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:20:36] "POST /video/6979fa7d55cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 17:21:57,335 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:21:57] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:21:57,624 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:21:57] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:21:58,207 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:21:58] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:21:58,561 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:21:58] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:22:18,639 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:22:18] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:22:18,929 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:22:18] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4NzY2NH0.fqFFOoWQmj0MSqs8007Kq9Teo5eOjBfT1zlosRIko-w HTTP/1.1" 200 -
+2026-01-29 17:22:20,030 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:22:20] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:22:20,390 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:22:20] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:23:17,422 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:17] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:23:18,055 INFO auth.routes login_event
+2026-01-29 17:23:18,056 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:18] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:23:18,110 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:18] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:23:18,457 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:18] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:23:19,475 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:19] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Nzg5OH0.J53UMxHFuvZCvWH8hr9TFBtmxdrIfiW24TxfRSKLLEc HTTP/1.1" 200 -
+2026-01-29 17:23:19,821 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:19] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4Nzg5OH0.J53UMxHFuvZCvWH8hr9TFBtmxdrIfiW24TxfRSKLLEc HTTP/1.1" 200 -
+2026-01-29 17:23:20,387 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:20] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:23:20,726 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:23:20] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:28:50,405 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:28:50,895 INFO auth.routes login_event
+2026-01-29 17:28:50,896 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:50] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:28:50,976 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:50] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:28:51,334 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:51] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:28:53,721 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:53] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4ODIzMX0.QuYNI4b6C4oAMpAm2g_QkvSbI3iXCZYQA5DNElj99uA HTTP/1.1" 200 -
+2026-01-29 17:28:54,031 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:54] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4ODIzMX0.QuYNI4b6C4oAMpAm2g_QkvSbI3iXCZYQA5DNElj99uA HTTP/1.1" 200 -
+2026-01-29 17:28:55,130 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:55] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:28:55,486 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:28:55] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:34:15,011 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:34:15] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:34:15,742 INFO auth.routes login_event
+2026-01-29 17:34:15,744 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:34:15] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:34:15,813 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:34:15] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:34:16,255 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:34:16] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:55:12,096 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:12] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 17:55:12,917 INFO auth.routes login_event
+2026-01-29 17:55:12,918 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:12] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 17:55:13,012 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:13] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 17:55:13,429 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:13] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 17:55:15,745 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:15] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4OTgxM30.lI8xQTBSZ_Wa6nW_Cwb6Z6ZRKjoiFcTFdwb3h9-g_2I HTTP/1.1" 200 -
+2026-01-29 17:55:16,090 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:16] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY4OTgxM30.lI8xQTBSZ_Wa6nW_Cwb6Z6ZRKjoiFcTFdwb3h9-g_2I HTTP/1.1" 200 -
+2026-01-29 17:55:17,012 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:17] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 17:55:17,520 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 17:55:17] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 18:01:37,807 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\video\\routes.py', reloading
+2026-01-29 18:01:39,203 INFO werkzeug  * Restarting with stat
+2026-01-29 18:01:47,939 WARNING werkzeug  * Debugger is active!
+2026-01-29 18:01:47,953 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 18:03:31,479 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:31] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 18:03:32,221 INFO auth.routes login_event
+2026-01-29 18:03:32,222 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:32] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 18:03:32,306 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:32] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 18:03:32,702 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:32] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 18:03:36,895 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:36] "OPTIONS /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY5MDMxMn0.5rEW_nNU42Lo-l-Flj-jLtqnffFcU757CQHD3LM32R4 HTTP/1.1" 200 -
+2026-01-29 18:03:37,342 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:37] "GET /video/6979fa7155cff140fedcb994/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NCIsImV4cCI6MTc2OTY5MDMxMn0.5rEW_nNU42Lo-l-Flj-jLtqnffFcU757CQHD3LM32R4 HTTP/1.1" 200 -
+2026-01-29 18:03:38,199 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:38] "OPTIONS /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 18:03:38,664 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:38] "POST /video/6979fa7155cff140fedcb994/watch HTTP/1.1" 200 -
+2026-01-29 18:03:56,861 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:56] "OPTIONS /video/6979fa7155cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY5MDMxMn0.Mighl8X3BGNJ1B3tGLCPmhnqOUeuSkvwemuS6yLM7o8 HTTP/1.1" 200 -
+2026-01-29 18:03:57,244 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:57] "GET /video/6979fa7155cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY5MDMxMn0.Mighl8X3BGNJ1B3tGLCPmhnqOUeuSkvwemuS6yLM7o8 HTTP/1.1" 200 -
+2026-01-29 18:03:57,836 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:57] "OPTIONS /video/6979fa7155cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 18:03:58,184 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:03:58] "POST /video/6979fa7155cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 18:04:55,314 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:04:55] "OPTIONS /video/6979fa7155cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY5MDMxMn0.Mighl8X3BGNJ1B3tGLCPmhnqOUeuSkvwemuS6yLM7o8 HTTP/1.1" 200 -
+2026-01-29 18:04:55,678 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:04:55] "GET /video/6979fa7155cff140fedcb996/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjY5NzlmYTcxNTVjZmYxNDBmZWRjYjk5NiIsImV4cCI6MTc2OTY5MDMxMn0.Mighl8X3BGNJ1B3tGLCPmhnqOUeuSkvwemuS6yLM7o8 HTTP/1.1" 200 -
+2026-01-29 18:04:56,598 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:04:56] "OPTIONS /video/6979fa7155cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 18:04:57,009 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:04:57] "POST /video/6979fa7155cff140fedcb996/watch HTTP/1.1" 200 -
+2026-01-29 18:05:13,371 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:13] "OPTIONS /auth/login HTTP/1.1" 200 -
+2026-01-29 18:05:14,222 INFO auth.routes login_event
+2026-01-29 18:05:14,223 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:14] "POST /auth/login HTTP/1.1" 200 -
+2026-01-29 18:05:14,276 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:14] "OPTIONS /dashboard HTTP/1.1" 200 -
+2026-01-29 18:05:14,625 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:14] "GET /dashboard HTTP/1.1" 200 -
+2026-01-29 18:05:17,990 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:17] "OPTIONS /auth/me HTTP/1.1" 200 -
+2026-01-29 18:05:18,513 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:05:18] "GET /auth/me HTTP/1.1" 200 -
+2026-01-29 18:17:19,987 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 18:17:20,809 INFO werkzeug  * Restarting with stat
+2026-01-29 18:17:24,523 WARNING werkzeug  * Debugger is active!
+2026-01-29 18:17:24,540 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 18:20:16,348 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.75:5000
+2026-01-29 18:20:16,348 INFO werkzeug [33mPress CTRL+C to quit[0m
+2026-01-29 18:20:16,350 INFO werkzeug  * Restarting with stat
+2026-01-29 18:20:17,628 WARNING werkzeug  * Debugger is active!
+2026-01-29 18:20:17,632 INFO werkzeug  * Debugger PIN: 506-886-877
+2026-01-29 18:24:17,228 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:24:17] "GET /health HTTP/1.1" 200 -
+2026-01-29 18:24:17,293 INFO werkzeug 127.0.0.1 - - [29/Jan/2026 18:24:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-29 18:25:14,101 INFO werkzeug  * Detected change in 'D:\\Assignment\\video_app_project\\backend\\app.py', reloading
+2026-01-29 18:25:14,693 INFO werkzeug  * Restarting with stat
